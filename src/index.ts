@@ -1,35 +1,29 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SampleComponent } from './sample.component';
-import { SampleDirective } from './sample.directive';
-import { SamplePipe } from './sample.pipe';
-import { SampleService } from './sample.service';
+import { IsotopeGridComponent } from './isotope-grid/isotope-grid.component';
+import { IsotopeItemComponent } from './isotope-item/isotope-item.component';
 
-export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
+export * from './isotope-grid/isotope-grid.component';
+export * from './isotope-item/isotope-item.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    IsotopeGridComponent,
+    IsotopeItemComponent,
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    IsotopeGridComponent,
+    IsotopeItemComponent,
   ]
 })
-export class SampleModule {
+export class IsotopeModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
-      providers: [SampleService]
+      ngModule: IsotopeModule,
+      providers: []
     };
   }
 }
