@@ -21,7 +21,7 @@ To install this library, run:
 $ npm install ngx-isotope --save
 ```
 
-If you're using angular-cli add `isotope-layout` and `masonry-layout` to your file configuration angular-cli.json:
+If you're using angular-cli add `isotope-layout`, `masonry-layout` and `imagesloaded` to your file configuration angular-cli.json:
 ```json
 "scripts": [
   "../node_modules/masonry-layout/dist/masonry.pkgd.min.js",
