@@ -25,7 +25,8 @@ If you're using angular-cli add `isotope-layout` and `masonry-layout` to your fi
 ```json
 "scripts": [
   "../node_modules/masonry-layout/dist/masonry.pkgd.min.js",
-  "../node_modules/isotope-layout/dist/isotope.pkgd.min.js"
+  "../node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+  "../node_modules/imagesloaded/imagesloaded.pkgd.js"
 ]
 ```
 
