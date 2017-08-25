@@ -11,7 +11,7 @@
 3. [Consuming the library](#consuming-the-library)
 4. [Configuration](#configuration)
 
-# Getting Started
+## Getting Started
 
 ## Installation instructions
 
