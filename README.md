@@ -1,6 +1,19 @@
-# ngx-isotope
+# [Isotope](https://isotope.metafizzy.co/) module for Angular
 
-## Installation
+[![npm version](https://badge.fury.io/js/angular2-isotope.svg)](https://www.npmjs.com/package/ngx-isotope)
+
+> ngx-isotope is in development and **not ready for production use**.
+> Feel free to install and try it out, but depend on it at your own risk.
+
+## Table of contents
+1. [Getting Started](#getting-started)
+2. [Installation instructions](#installation-instructions)
+3. [Consuming the library](#consuming-the-library)
+4. [Configuration](#configuration)
+
+## Getting Started
+
+## Installation instructions
 
 To install this library, run:
 
@@ -8,34 +21,32 @@ To install this library, run:
 $ npm install ngx-isotope --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ngx-isotope
+If you're using angular-cli add `isotope-layout`, `masonry-layout` and `imagesloaded` to your file configuration angular-cli.json:
+```json
+"scripts": [
+  "../node_modules/masonry-layout/dist/masonry.pkgd.min.js",
+  "../node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+  "../node_modules/imagesloaded/imagesloaded.pkgd.js"
+]
 ```
 
-and then from your Angular `AppModule`:
+## Consuming the library
+
+Import `IsotopeModule` from your Angular `AppModule`:
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ngx-isotope';
+// Import the library
+import { IsotopeModule } from 'ngx-isotope';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    IsotopeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -45,26 +56,53 @@ export class AppModule { }
 
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
-```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+```typescript
+ @Component({
+   selector: 'my-component',
+   template: `
+     <isotope-grid>
+       <isotope-item *ngFor="let item of items">{{item.name}}</isotope-item>
+     </isotope>
+ })
+ class MyComponent {
+   items = [
+     {name: 'Item 1'},
+     {name: 'Item 2'},
+     {name: 'Item 3'},
+     {name: 'Item 4'},
+     {name: 'Item 5'},
+   ]
+ }
+ ```
+
+## Configuration
+
+### Options
+Read about Isotope options here: https://isotope.metafizzy.co/options.html
+
+The options attribute takes an object with the following properties:
+* itemSelector: string;
+* layoutMode: LayoutModes;
+* percentPosition: boolean;
+* stamp: string;
+
+#### Examples
+
+Inline object:
+```html
+<isotope-grid [options]="{ itemSelector: '.grid-item' }"></isotope-grid>
 ```
 
-## Development
+From parent component:
+```javascript
+import { IsotopeOptions } from 'ngx-isotope';
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
+public myOptions: IsotopeOptions = {
+  itemSelector: '.grid-item'
+};
 ```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
+```html
+<isotope-grid [options]="myOptions"></isotope-grid>
 ```
 
 ## License

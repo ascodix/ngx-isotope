@@ -5,6 +5,7 @@ import { IsotopeItemComponent } from './isotope-item/isotope-item.component';
 
 export * from './isotope-grid/isotope-grid.component';
 export * from './isotope-item/isotope-item.component';
+export * from './models/isotope-options';
 
 @NgModule({
   imports: [

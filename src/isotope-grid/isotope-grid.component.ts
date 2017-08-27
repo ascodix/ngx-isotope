@@ -3,6 +3,7 @@ import { IsotopeItemComponent } from '../isotope-item/isotope-item.component';
 import { IsotopeOptions } from '../models/isotope-options';
 
 declare var Isotope: any;
+declare var imagesLoaded: any;
 
 @Component({
   selector: 'isotope-grid',
@@ -30,5 +31,9 @@ export class IsotopeGridComponent implements OnInit {
     }
 
     this.isotope = new Isotope(this.el.nativeElement, this.options);
+    
+    imagesLoaded(this.el.nativeElement).on( 'progress', () => {
+      this.isotope.layout();
+    });
   }
 }
