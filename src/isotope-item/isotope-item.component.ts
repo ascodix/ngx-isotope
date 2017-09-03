@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
 import { IsotopeGridComponent } from '../isotope-grid/isotope-grid.component';
 
 @Component({
@@ -6,12 +6,16 @@ import { IsotopeGridComponent } from '../isotope-grid/isotope-grid.component';
   templateUrl: './isotope-item.component.html',
   styleUrls: ['./isotope-item.component.scss']
 })
-export class IsotopeItemComponent implements OnInit {
+export class IsotopeItemComponent implements OnInit, AfterViewInit {
 
   constructor(private grid: IsotopeGridComponent, public el: ElementRef) { }
 
   ngOnInit() {
 
   }
+
+    ngAfterViewInit() {
+        this.grid.add(this.el.nativeElement);
+    }
 
 }

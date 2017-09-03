@@ -31,9 +31,14 @@ export class IsotopeGridComponent implements OnInit {
     }
 
     this.isotope = new Isotope(this.el.nativeElement, this.options);
-    
-    imagesLoaded(this.el.nativeElement).on( 'progress', () => {
+  }
+
+  public add(el: HTMLElement) {
+      this.isotope.appended(el);
       this.isotope.layout();
-    });
+
+      imagesLoaded(el).on('progress', () => {
+          this.isotope.layout();
+      });
   }
 }
