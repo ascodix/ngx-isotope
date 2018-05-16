@@ -41,4 +41,8 @@ export class IsotopeGridComponent implements OnInit {
           this.isotope.layout();
       });
   }
+  
+  public layout() {
+      this.isotope.layout();
+  }
 }
