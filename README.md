@@ -106,7 +106,7 @@ public myOptions: IsotopeOptions = {
 ```
 ## Developers
 
-[Azeem Mirza](mailto:contact@azeemirza.com)
+[Azeem Mirza](mailto:contact@azeemirza.com)<br>
 [Albuisson Stéphane](mailto:stephane.albuisson@gmail.com)
 
 ## License
