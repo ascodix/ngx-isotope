@@ -104,7 +104,11 @@ public myOptions: IsotopeOptions = {
 ```html
 <isotope-grid [options]="myOptions"></isotope-grid>
 ```
+## Developers
+
+[Azeem Mirza](mailto:contact@azeemirza.com)
+[Albuisson Stéphane](mailto:stephane.albuisson@gmail.com)
 
 ## License
 
-MIT © [Albuisson Stéphane](mailto:stephane.albuisson@gmail.com)
+MIT © 
