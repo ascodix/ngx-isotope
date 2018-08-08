@@ -13,7 +13,7 @@ export interface IsotopeOptions {
   /**
    * Sets the layout mode used to position items. Default is layoutMode: 'masonry' See Layout modes.
    */
-  layoutMode?: LayoutModes;
+  layoutMode?: string;
 
   /**
    * The default layout mode. Items are arranged in a vertically cascading grid.
