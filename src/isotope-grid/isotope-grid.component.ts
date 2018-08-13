@@ -33,6 +33,12 @@ export class IsotopeGridComponent implements OnInit {
     this.isotope = new Isotope(this.el.nativeElement, this.options);
   }
 
+  ngOnChanges() {
+    if (this.isotope) {
+      this.isotope.arrange(this.options)
+    }
+  }
+
   public add(el: HTMLElement) {
       this.isotope.appended(el);
       this.isotope.layout();
