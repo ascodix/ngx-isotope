@@ -1,6 +1,6 @@
 # [Isotope](https://isotope.metafizzy.co/) module for Angular
 
-[![npm version](https://badge.fury.io/js/angular2-isotope.svg)](https://www.npmjs.com/package/ngx-isotope)
+[![npm version](https://badge.fury.io/js/angular2-isotope.svg)](https://www.npmjs.com/package/ngx-isotopee)
 
 > ngx-isotope is in development and **not ready for production use**.
 > Feel free to install and try it out, but depend on it at your own risk.
@@ -18,7 +18,7 @@
 To install this library, run:
 
 ```bash
-$ npm install ngx-isotope --save
+$ npm install ngx-isotopee --save
 ```
 
 If you're using angular-cli add `isotope-layout`, `masonry-layout` and `imagesloaded` to your file configuration angular-cli.json:
@@ -106,8 +106,7 @@ public myOptions: IsotopeOptions = {
 ```
 ## Developers
 
-[Azeem Mirza](mailto:contact@azeemirza.com)<br>
-[Albuisson Stéphane](mailto:stephane.albuisson@gmail.com)
+[Mayank Patel](mailto:patelmayankce@gmail.com)
 
 ## License
 

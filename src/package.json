@@ -3,18 +3,18 @@
   "version": "0.1.7",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ascodix/ngx-isotope"
+    "url": "https://github.com/patelmayankce/ngx-isotope"
   },
   "author": {
-    "name": "Albuisson Stéphane",
-    "email": "stephane.albuisson@gmail.com"
+    "name": "Mayank Patel",
+    "email": "patelmayankce@gmail.com"
   },
   "keywords": [
     "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ascodix/ngx-isotope/issues"
+    "url": "https://github.com/patelmayankce/ngx-isotope/issues"
   },
   "main": "ngx-isotope.umd.js",
   "module": "ngx-isotope.js",
