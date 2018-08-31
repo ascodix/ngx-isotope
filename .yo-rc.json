@@ -1,7 +1,7 @@
 {
   "generator-angular2-library": {
     "promptValues": {
-      "gitRepositoryUrl": "https://github.com/ascodix/ngx-isotope"
+      "gitRepositoryUrl": "https://github.com/patelmayankce/ngx-isotope"
     }
   }
 }
