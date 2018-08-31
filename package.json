@@ -1,11 +1,11 @@
 {
-  "name": "ngx-isotope",
-  "version": "0.1.7",
+  "name": "ngx-isotopee",
+  "version": "0.1.10",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ngx-isotope -d docs --hideGenerator",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-isotopee -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",

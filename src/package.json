@@ -1,6 +1,6 @@
 {
-  "name": "ngx-isotope",
-  "version": "0.1.7",
+  "name": "ngx-isotopee",
+  "version": "0.1.10",
   "repository": {
     "type": "git",
     "url": "https://github.com/patelmayankce/ngx-isotope"
@@ -16,10 +16,10 @@
   "bugs": {
     "url": "https://github.com/patelmayankce/ngx-isotope/issues"
   },
-  "main": "ngx-isotope.umd.js",
-  "module": "ngx-isotope.js",
-  "jsnext:main": "ngx-isotope.js",
-  "typings": "ngx-isotope.d.ts",
+  "main": "ngx-isotopee.umd.js",
+  "module": "ngx-isotopee.js",
+  "jsnext:main": "ngx-isotopee.js",
+  "typings": "ngx-isotopee.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",

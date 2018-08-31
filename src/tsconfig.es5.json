@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-isotope.js",
-    "flatModuleId": "ngx-isotope"
+    "flatModuleOutFile": "ngx-isotopee.js",
+    "flatModuleId": "ngx-isotopee"
   },
   "files": [
     "./index.ts"
