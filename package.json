@@ -1,11 +1,11 @@
 {
-  "name": "ngx-isotope",
-  "version": "0.1.7",
+  "name": "ngx-isotopee",
+  "version": "0.1.11",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ngx-isotope -d docs --hideGenerator",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-isotopee -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ascodix/ngx-isotope"
+    "url": "https://github.com/patelmayankce/ngx-isotope"
   },
   "author": {
-    "name": "Albuisson Stéphane",
-    "email": "stephane.albuisson@gmail.com"
+    "name": "Patel Mayank",
+    "email": "patelmayankce@gmail.com"
   },
   "keywords": [
     "angular2",
@@ -25,7 +25,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ascodix/ngx-isotope/issues"
+    "url": "https://github.com/patelmayankce/ngx-isotope/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",

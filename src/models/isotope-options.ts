@@ -33,4 +33,9 @@ export interface IsotopeOptions {
    */
   stamp?: string;
 
+  /**
+   * Shows items that match the filter and hides items that do not match   
+   */
+  filter?: string;
+
 }
